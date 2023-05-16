@@ -10,6 +10,7 @@ on:
 
 env:
   TEST_ENV1: test-evn1
+  TEST_ENV2: test-evn2
 
 jobs:
   test:
