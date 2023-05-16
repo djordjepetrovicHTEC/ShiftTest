@@ -1,0 +1,20 @@
+name: Test Workflow for extracting changes
+
+on:
+  workflow_dispatch:
+    inputs:
+        test:
+          type: string
+          description: test description 1
+          required: true
+
+env:
+  TEST_ENV1: test-evn1
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello
+        run: echo "Hello, World!"
